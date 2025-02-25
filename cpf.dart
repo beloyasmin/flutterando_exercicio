@@ -2,14 +2,14 @@ import 'dart:io';
 
 void main() {
   Cpf mycpf = Cpf('000000');
-  mycpf.validador();
+  mycpf.validate();
 }
 
 class Cpf {
   final String cpf;
   Cpf(this.cpf);
 
-  dynamic validador() {
+  dynamic validate() {
     print("Digite o seu cpf");
     String? newcpf = stdin.readLineSync();
     var cpfnew = newcpf!.replaceAll(RegExp(r'[\.\-]'), '');
