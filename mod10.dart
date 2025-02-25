@@ -23,7 +23,6 @@ class Mod {
     var lastdigit = numberlist.last;
 
     List<int> newnumbers = numberlist.sublist(0, numberlist.length - 1);
-    print(newnumbers);
 
     for (int i = 0; i < numberlist.length; i++) {
       var result = (i % 2 == 0) ? 2 : 1;
